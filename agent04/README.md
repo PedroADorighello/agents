@@ -36,7 +36,7 @@ Abaixo, a demonstração de uma interação real com o agente e o reflexo das a�
 > **Agente:** Ótimo! Marquei "Regar o jardim" como "Em Andamento".
 
 *(O cartão "Regar o jardim" é movido para a lista "Em Andamento")*
-<img src="agenttaskmanager/images/inicio.png" alt="Print: Cartão movido para Em Andamento" width="1000">
+<img src="images/inicio.png" alt="Print: Cartão movido para Em Andamento" width="1000">
 
 > **Usuário:** acabei de regar o jardim, já estou indo pegar os livros para estudar para a prova
 > 
@@ -47,11 +47,11 @@ Abaixo, a demonstração de uma interação real com o agente e o reflexo das a�
 > **Agente:** Consegui! "Regar o jardim" agora está como "Concluído".
 
 *(O agente recupera de uma falha e move "Regar o jardim" para "Concluído" e "Estudar para a prova" para "Em Andamento")*
-<img src="agenttaskmanager/images/meio.png" alt="Print: Cartões atualizados para Concluído e Em Andamento" width="1000">
+<img src="images/meio.png" alt="Print: Cartões atualizados para Concluído e Em Andamento" width="1000">
 
 > **Usuário:** acabei de estudar para a prova
 > 
 > **Agente:** Ótimo! Marquei "Estudar para a prova" como "Concluído".
 
 *(Fluxo finalizado com todas as tarefas movidas para a lista "Concluído")*
-<img src="agenttaskmanager/images/fim.png" alt="Print: Quadro finalizado" width="1000">
+<img src="images/fim.png" alt="Print: Quadro finalizado" width="1000">
