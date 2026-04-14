@@ -1,0 +1,1184 @@
+{
+  "id": "fd94ff09-442c-4882-b609-360e0af247f7",
+  "appName": "agenttaskmanager",
+  "userId": "user",
+  "state": {},
+  "events": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "olá"
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-eb23c7fa-eafd-4059-ac5d-b148539221a4",
+      "author": "user",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "5dd826b8-9ba8-4129-a1a9-fd4dd86fee4e",
+      "timestamp": 1776166562.7116354
+    },
+    {
+      "modelVersion": "gemini-2.5-flash",
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "id": "adk-c0fc2718-1830-4557-a785-aeeb508af6e4",
+              "args": {},
+              "name": "get_temporal_context"
+            },
+            "thoughtSignature": "CpMCAb4-9vtM6WELFibBvZCSM3QAFCb15lidDIeqVe0BD1Fh7SCmYUzzn-eUB2LJdgGcRuWDrv6R1TQQVBicKxhJBmResGOkvwad7ZaDVMaHVYo0cR1wmq_f-_sTobCZYZfkoPC2YhOWhyAJX881OsG7IxCGgezW23hMxPj-IKxI0GR3Xew6bAVUHyRe-m3H98KYmG9c-4fQKLjARQBdSbRMJ3AFp45KMvMLqRyMhXEEbQ_4HJH_uD97-na_5rSDMItCWjXiHOW2bERFmVXCBuR6H9LvRHQbZDV_dlnvRnMR0kE8VrDOYw9hegposbYd3sNvDTvcuy0VV5JL0abl66FetlnHiLIQPyEQs4-wmLxHJKRUPHs="
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 12,
+        "promptTokenCount": 469,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 469
+          }
+        ],
+        "thoughtsTokenCount": 55,
+        "totalTokenCount": 536
+      },
+      "invocationId": "e-eb23c7fa-eafd-4059-ac5d-b148539221a4",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "longRunningToolIds": [],
+      "id": "7db3888a-8914-4e21-95b2-a105d8959dc5",
+      "timestamp": 1776166562.7380638
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionResponse": {
+              "id": "adk-c0fc2718-1830-4557-a785-aeeb508af6e4",
+              "name": "get_temporal_context",
+              "response": {
+                "result": "2026/04/14 08:36:06"
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-eb23c7fa-eafd-4059-ac5d-b148539221a4",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "940cd3e0-a063-42c4-89ff-beab7a760bf6",
+      "timestamp": 1776166566.9509213
+    },
+    {
+      "modelVersion": "gemini-2.5-flash",
+      "content": {
+        "parts": [
+          {
+            "text": "Olá! No dia 14/04/2026, quais são as tarefas que você tem para hoje?"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 26,
+        "promptTokenCount": 516,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 516
+          }
+        ],
+        "totalTokenCount": 542
+      },
+      "invocationId": "e-eb23c7fa-eafd-4059-ac5d-b148539221a4",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "2304c77f-1b73-47e4-94fa-86b07ba79e6d",
+      "timestamp": 1776166566.9800756
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Preciso regar o jardim e estudar para a prova de sexta-feira."
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-41091697-18d0-4f87-9b0a-7125cedfe55c",
+      "author": "user",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "3e2bdddf-85ce-44aa-991d-841fa3af6e59",
+      "timestamp": 1776166653.9198968
+    },
+    {
+      "modelVersion": "gemini-2.5-flash",
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "id": "adk-8a562cb9-0b28-4426-930e-d42c67df6d32",
+              "args": {
+                "descricao_da_task": "Regar todas as plantas do jardim.",
+                "due_date": "2026-04-14",
+                "nome_da_task": "Regar o jardim"
+              },
+              "name": "adicionar_tarefa"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 55,
+        "promptTokenCount": 560,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 560
+          }
+        ],
+        "totalTokenCount": 615
+      },
+      "invocationId": "e-41091697-18d0-4f87-9b0a-7125cedfe55c",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "longRunningToolIds": [],
+      "id": "560ed717-9672-4c3e-ada1-8a3814daaddc",
+      "timestamp": 1776166653.9856791
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionResponse": {
+              "id": "adk-8a562cb9-0b28-4426-930e-d42c67df6d32",
+              "name": "adicionar_tarefa",
+              "response": {
+                "result": null
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-41091697-18d0-4f87-9b0a-7125cedfe55c",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "980d77dd-fbd9-4276-8178-2c6b62dae50e",
+      "timestamp": 1776166658.8426082
+    },
+    {
+      "modelVersion": "gemini-2.5-flash",
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "id": "adk-0732247d-f762-4ef3-b37c-6b6de11616a1",
+              "args": {
+                "descricao_da_task": "Revisar o conteúdo da prova de sexta-feira.",
+                "due_date": "2026-04-17",
+                "nome_da_task": "Estudar para a prova"
+              },
+              "name": "adicionar_tarefa"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 60,
+        "promptTokenCount": 631,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 631
+          }
+        ],
+        "totalTokenCount": 691
+      },
+      "invocationId": "e-41091697-18d0-4f87-9b0a-7125cedfe55c",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "longRunningToolIds": [],
+      "id": "5c08c05a-b186-4dd6-a317-2799835d839a",
+      "timestamp": 1776166658.8680685
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionResponse": {
+              "id": "adk-0732247d-f762-4ef3-b37c-6b6de11616a1",
+              "name": "adicionar_tarefa",
+              "response": {
+                "result": null
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-41091697-18d0-4f87-9b0a-7125cedfe55c",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "e1ea60f5-946e-4f6d-97cb-5c796cdb5a63",
+      "timestamp": 1776166663.64704
+    },
+    {
+      "modelVersion": "gemini-2.5-flash",
+      "content": {
+        "parts": [
+          {
+            "text": "Ok! Adicionei \"Regar o jardim\" e \"Estudar para a prova\" às suas tarefas. Há mais alguma coisa?"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 28,
+        "promptTokenCount": 707,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 707
+          }
+        ],
+        "totalTokenCount": 735
+      },
+      "invocationId": "e-41091697-18d0-4f87-9b0a-7125cedfe55c",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "2b7e0ad1-dfe4-442d-9722-72fb50add53c",
+      "timestamp": 1776166663.6759615
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "estou indo regar o jardim"
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-98c4a084-201b-4abd-9721-685ab0aa4a2d",
+      "author": "user",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "77f5bb4f-9f5a-4689-aa00-506e250e89b3",
+      "timestamp": 1776166677.286242
+    },
+    {
+      "modelVersion": "gemini-2.5-flash",
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "id": "adk-9fdf0b7d-4e04-439c-a90a-ba25c4ec80fd",
+              "args": {
+                "nome_da_task": "Regar o jardim",
+                "novo_status": "Em Andamento"
+              },
+              "name": "mudar_status_tarefa"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 35,
+        "promptTokenCount": 744,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 744
+          }
+        ],
+        "totalTokenCount": 779
+      },
+      "invocationId": "e-98c4a084-201b-4abd-9721-685ab0aa4a2d",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "longRunningToolIds": [],
+      "id": "565040bd-824c-4aa2-84fb-d92cba1a8cc7",
+      "timestamp": 1776166677.3082156
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionResponse": {
+              "id": "adk-9fdf0b7d-4e04-439c-a90a-ba25c4ec80fd",
+              "name": "mudar_status_tarefa",
+              "response": {
+                "result": "✅ 'Regar o jardim': A fazer → Em andamento"
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-98c4a084-201b-4abd-9721-685ab0aa4a2d",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "48822020-99a2-41fb-a735-b382964cdf1b",
+      "timestamp": 1776166681.7592976
+    },
+    {
+      "modelVersion": "gemini-2.5-flash",
+      "content": {
+        "parts": [
+          {
+            "text": "Ótimo! Marquei \"Regar o jardim\" como \"Em Andamento\"."
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "cacheTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 643
+          }
+        ],
+        "cachedContentTokenCount": 643,
+        "candidatesTokenCount": 19,
+        "promptTokenCount": 811,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 811
+          }
+        ],
+        "totalTokenCount": 830
+      },
+      "invocationId": "e-98c4a084-201b-4abd-9721-685ab0aa4a2d",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "f569864c-bc3d-4d06-89ac-f35f2e9aa5ab",
+      "timestamp": 1776166681.7930167
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "acabei de regar o jardim, já estou indo pegar os livros para estudar para a prova"
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-1c17fba2-b8f7-45d5-9820-c4f3e5164cf7",
+      "author": "user",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "e28479d4-f4b3-460d-8517-7040d82dd6cf",
+      "timestamp": 1776166743.0057623
+    },
+    {
+      "modelVersion": "gemini-2.5-flash",
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "id": "adk-fe18f3f3-8085-46b9-8900-a5ee5d7a3692",
+              "args": {
+                "nome_da_task": "Regar o jardim",
+                "novo_status": "Concluído"
+              },
+              "name": "mudar_status_tarefa"
+            },
+            "thoughtSignature": "Cs8CAb4-9vuxsq-B-7PfoR5U5iJeQA7okwR8J7aP6bs1S4r7fbBSb6jZrf5mQ2ppBwQu_iZ6tbLqRYlDWMJoj6FRg7a5dUX0BU3T0gvoUsqSKS_gpcVCgSyk5yVpG3rQc47VN9ctKEZlz1NYIP67EXYQc8BW0IxVl04NSrA72v6rb3jaSbpLqlCju-kVj-f1RT_CIAbDmf8qHB_MeDjeCDEb6obc_ffFyrxLGjiXThL3mNcV2rTZggOMEVw3wq3a4Kki_XremPDg4WwVDH2ZZY7k-iAyY_EWQc7VRVzSKPwh_PAdXG7PhmkFcml2F6krQQu1GEHL_vfdKcNm7SLvCRAO_I2X2MwDgA4fgwbCHgVl9zNBpggLtB-EXGA7hPvDvFxUlVcmkJXQObn0BrkXRMMqZHKv_O4xfT3STxXsjOKed5yHPt0OdOO7Q-tyI7XD3to="
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 35,
+        "promptTokenCount": 851,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 851
+          }
+        ],
+        "thoughtsTokenCount": 83,
+        "totalTokenCount": 969
+      },
+      "invocationId": "e-1c17fba2-b8f7-45d5-9820-c4f3e5164cf7",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "longRunningToolIds": [],
+      "id": "dd078e9f-5df2-459f-a3cd-0b172ece4ee6",
+      "timestamp": 1776166743.0326416
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionResponse": {
+              "id": "adk-fe18f3f3-8085-46b9-8900-a5ee5d7a3692",
+              "name": "mudar_status_tarefa",
+              "response": {
+                "result": "❌ Status inválido. Use: 'a fazer', 'em andamento' ou 'concluido'"
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-1c17fba2-b8f7-45d5-9820-c4f3e5164cf7",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "e47f0520-a0c5-45c8-9885-249b009eb5d4",
+      "timestamp": 1776166747.1964562
+    },
+    {
+      "modelVersion": "gemini-2.5-flash",
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "id": "adk-7c9b7d34-e683-4f7a-9e18-ce2c12974888",
+              "args": {
+                "nome_da_task": "Regar o jardim",
+                "novo_status": "concluido"
+              },
+              "name": "mudar_status_tarefa"
+            },
+            "thoughtSignature": "CrkFAb4-9vu0fa2rEAChJlB77qpuCBwSpFzcAEkz4PfCYzis3XXfRzr_eTJ9sXk_e3oq47rDoyD0VkAW5dw26AjuRIy-fND1L7hK3dO730w5liX-iqSrhcCY_9qVPN2kV2karRVMo604BT6eJ5dNkuybuUiX5n5uRkjMZ-HOXWu8LvDOpcbxrcW7eubv5Fbj0hblYkgRg-ufRpA1MgZGabXtwJPj7KZbtpgULpZchyIOdodPQZ-tb8b_lGi88mBCFEXDRc-pTCKOLIxNc1XUkpPNeT4XxsbwoFgb4l9aeZ0RwunGLxnO-h2AVp8z-FDqdlS8qIFGcroMNe6VNmiNoqywdhBE8I9NEkFEBZvvieSta9aIii5q3Z9qSKXfLtdDAl4IZf656KHmfiR-R0s0AaUTtoimqEgCVjrsTeSydz9jOkH5DzTtSL1zU26eavBKfk4hISHX2Pvtc76aGKttyAtRdT4IvcGq6pfH6BClgO5zkpTXTuAx8GRwQbEQTt3_RY9UAFDDstXzqFWE5X9LQSNqEWnyXVLPfJEVv4rNih9DJybK4gGcjNVKx4XQS8bgC84t5Pa63eD-dojrUFmmWn-_OrvB5vYvqobcaUWgQ3GbexDuhoKMABHdxflqrGz4VMu2TmmVcXf89KVNO4Zb_IzkHdFMxY6LEkaokuB42LW3Kn0ER8FRI73a1DvpoSciisJr0FJLnRgx96QZAY2L20CaqAL83HSQ7R-BOQS5X0NbWDtbVvfWP4YaZnVLeZTyicaEjK_maWSW-4aGdds9cqLHgwsswyCjAGjvCjmndZy1Ks6ojzAZvc6g0muFb3Yiq5rkjjNE8pc7W08sp4vML-moR0IKDdvla3ejDzv316qKr3iU7-wHzF_XC0k353W0eVISdDHy9jG0nbm47EaVdQRt-qy3LcSkmER5JQ=="
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "cacheTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 627
+          }
+        ],
+        "cachedContentTokenCount": 627,
+        "candidatesTokenCount": 35,
+        "promptTokenCount": 927,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 927
+          }
+        ],
+        "thoughtsTokenCount": 169,
+        "totalTokenCount": 1131
+      },
+      "invocationId": "e-1c17fba2-b8f7-45d5-9820-c4f3e5164cf7",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "longRunningToolIds": [],
+      "id": "5b7252a8-7ea6-4231-aa60-8ff05d69e527",
+      "timestamp": 1776166747.2235634
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionResponse": {
+              "id": "adk-7c9b7d34-e683-4f7a-9e18-ce2c12974888",
+              "name": "mudar_status_tarefa",
+              "response": {
+                "result": "❌ Lista 'CONCLUÍDO' não encontrada no board"
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-1c17fba2-b8f7-45d5-9820-c4f3e5164cf7",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "3c922a48-fd04-46bd-bcd7-3642b3f41de9",
+      "timestamp": 1776166751.6735551
+    },
+    {
+      "modelVersion": "gemini-2.5-flash",
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "id": "adk-6b42336b-da3a-4623-8800-aa058a2da0ba",
+              "args": {
+                "nome_da_task": "Regar o jardim",
+                "novo_status": "concluido"
+              },
+              "name": "mudar_status_tarefa"
+            },
+            "thoughtSignature": "CuUOAb4-9vvgvpP3oiPXOTVAmZ9T3dcyVjuF91x9jHwWAA-D1rmlOGVN4SWagOrFcWmMVtiIGFWc25mWsb4D4tQddgDzSoYVfPtoidrX7iG0sqKm622P9xGzH5gqDjQxLzwvh4sib-O-roP-KB3iVq0WKQtkeylXjgsB_fCTQspDobVjNW161Bw4Y1xCA3cyQ2uXyq5VdCtRCDqHbflEAlNzbUwyyLJRKWh0AqS5MjfmTGVj5j3HzvYan--xJDs8dePtz6_fv-5lfIfVWgXKHg3ZAYVYRHtuxbvi8lt8BFL0Dvr41bUinmzxfgUCrdiLIRCmjF0S2PLhHj5Lbag-1Eg1QIv-0rBDjHyGdLeG2zU0W9AYP5A9MFhKJLRow-ZoBSzXj9QPeMjcFWWImTjJ496JVbznqq4SyIX5GpsluV-Zip9Oefd4x_oRryVkzIEUhaPQ2hJVHDqE-rJ6Dxzwx2T84fKNlQNO9Gs3BmHw3Jy_147x_UFPYEyvtd0P46YMLBIM7MGOMDPaRXFizkXrBd_wGmmdpH18Lcc-Mwl55Qp4q3d93gzsLKr2k06xcR3dkH3OuYen7_3uBnpjwVN0NIHdAEiScb2GO0oJCteIGDirtN2qiKs35L4Z2qcY8U40-yA-4x-Fu1594n1q28481dRh7mtoMWQO_DlwGZ6bOoUQ3StMKcDdbaXwJWRtHz_gnsjIPg4830ikepZ5rdV_UA-XiA5oXd-bd8rreL4AUBuS2HLABpGtzYtuFhuMpR4NEuWDO4GTz3sFZcgV9LLyAfWb83PvBlMz-N_WNkwbeieCY1X3fGqlnMbriKwsvLH3PdA5Oeu54rOHhLtMOXmca-2hfycXpK9xQwQH0UhSgf9FAc3pSt0D6YKal9M9QhhJAY2Qf0psbRuFlEX_sUdwL4ravmLiW7wdehHjifnA4sVIqKDN4wq4W5IQQXDRBN9YyHDS9Z4H7_LwdRzUgQgSfq3M8Bgmhso0XcOHpikD1M_mEncq1QP7pUyzlAiAKoGZT_Hzs9EXZy5cFTatSSygvZFpHOsQK8ApSJL5eNLCN5ZlC9npQdgZ8aqg1QTosp_nfhYZg431Wyz1vAURqO9kjQxfkIl_7A30rlJ9XmJpmv6ay3_gEk2jVgNWkHKSta0IUM0j16-lubIpcJcxY5wTajITipm9ILYmCCwBzSMrnJzhmPd33cXC0eL8Mw1XM6o7js_Lwy27-FvWaPC8RzYNEPB1kM8EY6Ly1jGVFGAmt4QkG6XXzwVOSR_er_wmpcVvunZnT-Kp7aam7hiHHhHmx8PrXnwRJk7P2SNWQ9-kaZXmtR5Bi_BkpCJnkrP3uLY5guU-jtCCQEf5l-EAADvNdi7JPflalpU7RKCvce6RlIjsWJXJbfnoeOzT-QMGkbGX2xWpNW8tfleZhFEBFcZqYwfZIKN4bb-0i0EIzRQyPieat4pM9dsNw-O1q6El68xmLItAZxVr8r6UGF1BAsVZGOEBrA5TZ0D_R3O9WtBptZGLV0nPrWovwENyv92nHH8_D2JIUj3oJKO7XUIxRZSxlRfeSE_oljdCNlu3gQP4VgxSzO7yejL34rEBO_fARndg8OK3oovqwKgS3AClxPsUarGrSCz9kfMc8roK0J2w9pHvyK81DZXI6C7_Fo9iwe0iF1m1p_zvPzdfCamuoUdIHokV6IJim_6TtqEis9dxJD4m0zQg9qhY8dJwzbP41fxc7vNra8elN2fzeT77Nld7p0pnUY5nzG_0AnJ59OGBhUqug68BGu8GfJT8SceIySHRYOn3F5P7mQaQTNsJ6TLSk3MwtlUZRNS30cRykfCzTNJjz9diaVwDYo0vwdzhynYBEpkiUs0rL0g4RhEK5HZqT7MibA0SfeRhtPAESRtop_xj8H3TVYk8Qvt0XJBRpnk8REUvxDyJI2Ch9b-hedv6mtrhRt255UX_p6Y7PmGLw73uGurIGxxGnN7mwpN2C3wsGl74SI1JapVv48BMPBz6EmEJNmVzeW5KHnj5ykri7JpNXeIhwPwm0PMeJCzoh1jnixMDZmeUFHfDP6fdPnsjp0-4CYgLmvkWS1tGfNohNqaQ8O2Z1bcACHGklRyoJc9vJIJTddAb2kxoGK5c135ZaRsvxOYRNG0sm8RTeIrwH7IWsvWCjyFgnyOSvi59HFofHzB9RWAorasukX29MiElhQJKssar6rGNJhqPurG5Kadj3vL9ac24TASeb6o0tmQmQFsPsh9V9106QgZYkcEqDiUo3gV4o-jcv7zpx_v-161a1CvqU4LRg_9WlCoxDhdgc6WU7eJE394r0vlkDo-pdOi3Tcc6LqHlHOtU3RhWLmmKMq2HkAtfOdnFDPXJR2ITFXrc7snbS-JojRsgXj4eaJFrLNUL4_8va64ouDGedKaHawsqqF2DGJypb2OeLD2wAMmzZ6Ikbzi1DX7p9qcJS6Lht_s_wVMhEjz8PrWvRtdu8eKNHx-1ERrIRfSPtLa8HFcNNAhqqBh6E34rIsJXH4Ph4jZuC6Vc"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "cacheTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 576
+          }
+        ],
+        "cachedContentTokenCount": 576,
+        "candidatesTokenCount": 35,
+        "promptTokenCount": 993,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 993
+          }
+        ],
+        "thoughtsTokenCount": 486,
+        "totalTokenCount": 1514
+      },
+      "invocationId": "e-1c17fba2-b8f7-45d5-9820-c4f3e5164cf7",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "longRunningToolIds": [],
+      "id": "c0782d14-650d-4648-a5e2-6becf75d6cd1",
+      "timestamp": 1776166751.7046132
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionResponse": {
+              "id": "adk-6b42336b-da3a-4623-8800-aa058a2da0ba",
+              "name": "mudar_status_tarefa",
+              "response": {
+                "result": "❌ Lista 'CONCLUÍDO' não encontrada no board"
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-1c17fba2-b8f7-45d5-9820-c4f3e5164cf7",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "2e02d08a-1079-4cbb-aa9f-4b8377421186",
+      "timestamp": 1776166757.6344025
+    },
+    {
+      "modelVersion": "gemini-2.5-flash",
+      "content": {
+        "parts": [
+          {
+            "text": "Não consegui marcar \"Regar o jardim\" como \"concluído\" no momento, pois parece haver um problema com a lista de status no sistema.\n\nNo entanto, estou marcando \"Estudar para a prova\" como \"Em Andamento\" para você.\n",
+            "thoughtSignature": "CuwIAb4-9vtnAwNO4h8_vE_plTAGRBTqoSQSxDfA8YQKwtc0Q-Q1hoe7fQjXgLP3dtL5gfHthMtN0INhGTHZO9EvD87VxPqILXjsqTjbOMbj5fsUFElVcEvjSPv7b-Ecr5h_QvZgVlZZCpLkpCIGfauGccakfOxug2wcXQr6Nv0rV3D-5CecsunXITUr333FICTFqVehOGeuQoq77endnlEbaGgFT0SxNx4UpILpYbPJK8uqltdxL7YSjozcu_P95Ps6V3aO1r0ncLVbuOSuEZPR706gphGYjEpDL4yT2mp-zb8H8Cg0V4EktiiccHBqlpEWkAU7BxR22aTb3R7Q2YJz5411F4XvDJNXCqBFDZ9_UkActqlgHcBJKQabZeUjKIEqGM1XKEq-re70lHq6QD6_Jzee_v4c7R9OrcVfeCCAcLAqX3FjMgQc7YVitQ0XRlepzexW5cxjBzhWDEuDxWhkvS-e8qY5BwMrTIaRsHTdmHTc3xtwf3ZkHP7RIF4CI3A8b7WixW7Uk95sU1S6mdKxNYfXHamBj7wPJ0ff0Sht7TWxXYZGBBTK071D-XDLp1BAOqIwu_212aX17DLHmztOdk4OUoIq6DBpLjH2XOLZjtTiIz-hvstNFcgA2E-Ek9GKsAXtL94ScAqjTgxL12da-6MH2H5oVZdvumLSq3BtSj01HmEshiVNVEuDxOZpavQSLCOvC3ex7KkAtzSv9XlNLdPjCTMDUDHQp3-yBOCiO3c9a8zpgHsbxp0xf_ga2BZW_96OpVdcBy_bUbG00ZM3vU0n_Wmy6X_NVrgq7sWgd7pZR9OoTv_hRynLpz1QlzhejLxlNRG0yrK5JII-qcR-EEwzcl4TLHIWyqJXNzmmYrmxUtpBWRICgWq4pQQb3QXb8OivCR7lsH9Ud9hjRN8_m3I4zy97-chK3y2rHlBijKsUXulaRw9mxV8AOKO662AenOtH8QFPGJZuNLpTeRFlRfw1vsx-1kVcLfJSH8azTZv3IcWShtP7qBnz8SV7H8zTxI4bCBU6gArC8pioxmwjO8hjRzGUIC4voChiv8msYvH2FUzOYSLKWGkvzNw_zPHzE_VA649i2WT7rHcywn_pkd3DpFYGeK5E2BBYeYe58eWpQC7aUOfQoAvyFeGDzkipWJ4GnyvQv4DEEIkSrqRe3Pqf8kFAq8wwtOTej7Sl8boLC7UZIrfOpQgOxXEc_4SkyrAj09Q2nYxS9g-df1pGj8YCNfvVYsXZ8pxOmzS5NEESVr_W2qh904PTonM_gikxj1XC5hNGImnyUQdREhVLyZFh7szFrY5ukEP8SMQjKDhjXn9sXA1Q1dtvinvKjl6r8obF0Tc4qtasHMQ-5sFKpfFI0Mb8AV_5vYmaOViQVF0WYLn__Mf4gCn5b9V4jEsAmRbujjKUC1ZYxmas3DJ3fksM9twQnbpRXxEvDmZnVlCmtY-UZ7wjZJP0ZPTQoh7PrjvrjVgoaZByY3Gn2PjxDYn6FyyjLJJg2hfmfA=="
+          },
+          {
+            "functionCall": {
+              "id": "adk-6a88a7d8-0733-4bde-be6b-3ab18b6699db",
+              "args": {
+                "novo_status": "em andamento",
+                "nome_da_task": "Estudar para a prova"
+              },
+              "name": "mudar_status_tarefa"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 92,
+        "promptTokenCount": 1059,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1059
+          }
+        ],
+        "thoughtsTokenCount": 289,
+        "totalTokenCount": 1440
+      },
+      "invocationId": "e-1c17fba2-b8f7-45d5-9820-c4f3e5164cf7",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "longRunningToolIds": [],
+      "id": "d29385f0-41c4-4ad2-a758-795c27798e3e",
+      "timestamp": 1776166757.676836
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionResponse": {
+              "id": "adk-6a88a7d8-0733-4bde-be6b-3ab18b6699db",
+              "name": "mudar_status_tarefa",
+              "response": {
+                "result": "✅ 'Estudar para a prova': A fazer → Em andamento"
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-1c17fba2-b8f7-45d5-9820-c4f3e5164cf7",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "1b31d8ea-d6c6-4479-a102-63955c57ccf1",
+      "timestamp": 1776166763.8589697
+    },
+    {
+      "modelVersion": "gemini-2.5-flash",
+      "content": {
+        "parts": [
+          {
+            "text": "Certo! Marquei \"Estudar para a prova\" como \"Em Andamento\"."
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 19,
+        "promptTokenCount": 1184,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1184
+          }
+        ],
+        "totalTokenCount": 1203
+      },
+      "invocationId": "e-1c17fba2-b8f7-45d5-9820-c4f3e5164cf7",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "f068c1d2-45f6-4dac-bbef-abede2bac56b",
+      "timestamp": 1776166763.883587
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "poderia colocar a tarefa de regar o jardim como Conluido?"
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-b0717096-a448-4cea-a064-5d9cda88c70f",
+      "author": "user",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "9fb6d4f7-575b-4fd7-bd25-a34b631a298a",
+      "timestamp": 1776166844.051248
+    },
+    {
+      "modelVersion": "gemini-2.5-flash",
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "id": "adk-77723d5c-9c89-4882-93be-338c018fb0e2",
+              "args": {
+                "novo_status": "Concluído",
+                "nome_da_task": "Regar o jardim"
+              },
+              "name": "mudar_status_tarefa"
+            },
+            "thoughtSignature": "CuQEAb4-9vvhXVOwJhKoNrRh85QRNAnIodCok_AZA5WkV73CEkd_zXfA6_zqX7DyU7ZyhmAy5eV-OgxAvfZYq8v9ToKg_Z9WyJNjByiiZXifngrbEep2Mb1-D3QZgBFS3LZcEDh6_Dov2O0vxNFno_BtzOqJqtaMZF3bLnXZgeen44p9r1Lnc_TkF8cq84H7saqZY_HPZ0VRDsXHO8BMJW9G-tKCZozvRtodm44NygrF7QTOkqg9ghFYGjfioisNFqrzBWQLcM3UQbnonnb_fNmVudYsZn1mC7qWzTrG91fjzkbKri4SCDy-yukp7ypaOgKCisQVNJzBIpR7RHIrH36JR2WTh-R8IkPMudQc3USn_k2M2yyERV0lQ1sPtHzExXzFQoTp4XT352OmBHMyAlv5zf7_5SOXvVJrYcnF-MxyNiTelZDVtA78WrAGC7i8RIGdQH33KwY8zLf65F8IcB90aF_zwPWMBZs-zeeTbx7FLNzyslZZEAbVp6JHO3s21_XRFFnybklXuZKi7sp26yCfUFgr4YCnAYduOZ8iqeqiuH2eXs8046UFAaI90OmzIc0nfkyBljC6hM5HJrI2H9YzGRbfdEn-5Av2R3uJZ6xTUUcX_XLpKYCV3Xo706Qi6sVHUe_VZUVbRBRb0qv0KrY9i71oZ_tP5KWTwtia3u_m6hr9ua31h_t0A_2nLRQsCd65VvHzTj3WUXMd599p_5S9NJrE2eQMThYwa0GQewSr5TgYjS-lJaEs127n26jVoqQHIyNRTRnI1AkFMwiqaTLke_6cQvsQXnJzOnz6k1v-0qiR6j8y"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 35,
+        "promptTokenCount": 1220,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1220
+          }
+        ],
+        "thoughtsTokenCount": 135,
+        "totalTokenCount": 1390
+      },
+      "invocationId": "e-b0717096-a448-4cea-a064-5d9cda88c70f",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "longRunningToolIds": [],
+      "id": "d654a030-027c-4732-9649-5a66236cc727",
+      "timestamp": 1776166844.06999
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionResponse": {
+              "id": "adk-77723d5c-9c89-4882-93be-338c018fb0e2",
+              "name": "mudar_status_tarefa",
+              "response": {
+                "result": "❌ Status inválido. Use: 'a fazer', 'em andamento' ou 'concluido'"
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-b0717096-a448-4cea-a064-5d9cda88c70f",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "7a8f2f9f-a943-42df-b1f8-f8a506926d9e",
+      "timestamp": 1776166848.5334227
+    },
+    {
+      "modelVersion": "gemini-2.5-flash",
+      "content": {
+        "parts": [
+          {
+            "text": "Ainda não consigo marcar \"Regar o jardim\" como \"Concluído\". O sistema aceita apenas os status \"a fazer\", \"em andamento\" ou \"concluído\" (tudo em minúsculas e sem acento).\n\nVocê gostaria de tentar mudar o status para \"concluido\" (tudo em minúsculas e sem acento)?"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "cacheTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 666
+          }
+        ],
+        "cachedContentTokenCount": 666,
+        "candidatesTokenCount": 75,
+        "promptTokenCount": 1296,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1296
+          }
+        ],
+        "totalTokenCount": 1371
+      },
+      "invocationId": "e-b0717096-a448-4cea-a064-5d9cda88c70f",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "7cfb9ed8-fca4-4fad-adef-47f013f9a6c1",
+      "timestamp": 1776166848.5627391
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "poderia tentar novamente?"
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-9e474ba2-3b4c-4ffa-a346-0eed24c931c2",
+      "author": "user",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "5c0806ad-8530-485a-947f-a1bde18b4223",
+      "timestamp": 1776166864.605542
+    },
+    {
+      "modelVersion": "gemini-2.5-flash",
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "id": "adk-fb734cec-413a-4f21-9b9a-e6357350651b",
+              "args": {
+                "novo_status": "concluido",
+                "nome_da_task": "Regar o jardim"
+              },
+              "name": "mudar_status_tarefa"
+            },
+            "thoughtSignature": "CpAEAb4-9vt1wyLRZOIxOLeaG1a2qGSXpUJq6Srs2vBD6jmTdrFYISqUF_HuwU2i3PDFKZAxjg0nWsY_4vNsw_28eBqmQrx_4jdvZNsmvbHsS014Ar0eCjjEqOYaDhMG4WRt5yE-XsG58xkZbwY0y6l5HgUm08n4vlz4d3WIZRsmzUYsq3P9HCoV6hJnOuam61i50fybQACDkRH284DLlpmWzuaZe0NqdNmw0XGU8TVSPDry1LMUshrmUnWuBtfW4cFx2ddhO3hpEjnL-EuTjvUrInNFlXOX47GqNqn80ALtn-IByMq-ZudPcswp11F3tXs499lvkpUoDeJPnVHW4sytYQMB_RzgVePel-KGkgrac3K7b5g2njWBwzYRc6jaW4QZ_htjA3r6UT_YfsA5b_5oVmLis7RgwHZHiS8mZh3AF5q5rmvVx-l1TKW8Q_1ZKZhO3WD-_t5tovSqM9IcUJ0fwGnxxu7pro_ZA6Q8QJZGUTVB-blypoAykReDclw1sPv5tp4NalvCUdtl0tu4Mqq4cWVtbisCObtiweKcMAxjJ2dlXdIa591BzsRPpF2aWRqDoKIRLzoiTHb5ZLpxzgd0-N3ZH2nHMXZxRgiRYH8CennpYH-zHIxatsvvPn8BHRy9e_J4hYDVajlazeBBGjKbcDmlnzBRUrPrbe3vf7LCblqM6E6rhAe_olwvQ10GilSR"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "candidatesTokenCount": 35,
+        "promptTokenCount": 1378,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1378
+          }
+        ],
+        "thoughtsTokenCount": 142,
+        "totalTokenCount": 1555
+      },
+      "invocationId": "e-9e474ba2-3b4c-4ffa-a346-0eed24c931c2",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "longRunningToolIds": [],
+      "id": "f8c5b52c-2d84-4351-aadd-0cf442e03ef8",
+      "timestamp": 1776166864.6304765
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionResponse": {
+              "id": "adk-fb734cec-413a-4f21-9b9a-e6357350651b",
+              "name": "mudar_status_tarefa",
+              "response": {
+                "result": "✅ 'Regar o jardim': Em andamento → Concluído"
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-9e474ba2-3b4c-4ffa-a346-0eed24c931c2",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "4b6c1319-320b-4ac3-b967-51eb695d81c5",
+      "timestamp": 1776166869.8774729
+    },
+    {
+      "modelVersion": "gemini-2.5-flash",
+      "content": {
+        "parts": [
+          {
+            "text": "Consegui! \"Regar o jardim\" agora está como \"Concluído\"."
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "cacheTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 683
+          }
+        ],
+        "cachedContentTokenCount": 683,
+        "candidatesTokenCount": 18,
+        "promptTokenCount": 1446,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1446
+          }
+        ],
+        "totalTokenCount": 1464
+      },
+      "invocationId": "e-9e474ba2-3b4c-4ffa-a346-0eed24c931c2",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "05fa096b-fc2e-4eb5-b757-07d2763ba9d5",
+      "timestamp": 1776166869.9135
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "acabei de estudar para a prova"
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-87f38a43-c6eb-4cdd-81ea-3cacaf91e154",
+      "author": "user",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "f523a4ce-3fdc-41cc-928e-a5764b3a640f",
+      "timestamp": 1776166919.1052828
+    },
+    {
+      "modelVersion": "gemini-2.5-flash",
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "id": "adk-e76ca4ea-459b-4c23-be0d-f68cd32a63c9",
+              "args": {
+                "novo_status": "concluido",
+                "nome_da_task": "Estudar para a prova"
+              },
+              "name": "mudar_status_tarefa"
+            },
+            "thoughtSignature": "CssCAb4-9vuPV8eKlxbCmhtXvk4-5BxB3E7V9Pld-KHKyQnBDuoh_BmGWf1vxoh3jUd34ayFeo8x9pF0UB-TmSVj-0EKgrD7HEFPfCEvrAxRDTv2ORKlR72IlavAXpfi66UHLrk0aG7nJs-KFBLq_P5LvEM6-lz8igegd0-xezuHx-XSB0FfL6xStdqo2R82o8cb3W0jUWI86R3V02CekLdaNH1JUyuPb0xYFB3IZWyoJKySkeruB7YQmkZcxf5StORgdOw0fdM9FlZyuitIjEkXdJ_rbfJOeg7x4tenWOlPTJEH1XHqBsVE1edewlhrcvyhSXpaV_uhV3nmqMbElJfFhU9JO8Ko0Yb8X3Nma7-gNsPs57JnXR9985gAPul2OAcgls5Bag1ZinSrB97V8VPTSaJ_yoVzRl5na9Xf87TPwoYMg9bLDCcsC4R-6Q=="
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "cacheTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 733
+          }
+        ],
+        "cachedContentTokenCount": 733,
+        "candidatesTokenCount": 36,
+        "promptTokenCount": 1473,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1473
+          }
+        ],
+        "thoughtsTokenCount": 82,
+        "totalTokenCount": 1591
+      },
+      "invocationId": "e-87f38a43-c6eb-4cdd-81ea-3cacaf91e154",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "longRunningToolIds": [],
+      "id": "55cdbc00-d889-4c90-9d8e-945290e1280e",
+      "timestamp": 1776166919.1305344
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "functionResponse": {
+              "id": "adk-e76ca4ea-459b-4c23-be0d-f68cd32a63c9",
+              "name": "mudar_status_tarefa",
+              "response": {
+                "result": "✅ 'Estudar para a prova': Em andamento → Concluído"
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocationId": "e-87f38a43-c6eb-4cdd-81ea-3cacaf91e154",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "4b2c8f8b-1786-46df-b189-ca997977ef8e",
+      "timestamp": 1776166924.1620865
+    },
+    {
+      "modelVersion": "gemini-2.5-flash",
+      "content": {
+        "parts": [
+          {
+            "text": "Ótimo! Marquei \"Estudar para a prova\" como \"Concluído\"."
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "usageMetadata": {
+        "cacheTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1420
+          }
+        ],
+        "cachedContentTokenCount": 1420,
+        "candidatesTokenCount": 20,
+        "promptTokenCount": 1543,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1543
+          }
+        ],
+        "totalTokenCount": 1563
+      },
+      "invocationId": "e-87f38a43-c6eb-4cdd-81ea-3cacaf91e154",
+      "author": "root_agent",
+      "actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      },
+      "id": "82463bb4-aea9-48d2-9e11-e041c879860c",
+      "timestamp": 1776166924.1917362
+    }
+  ],
+  "lastUpdateTime": 1776166924.1917362
+}
